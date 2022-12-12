@@ -49,7 +49,7 @@ YOLOv5 🚀 是世界上最受欢迎的视觉 AI，代表<a href="https://ultral
 
 <div align="center">
 
-[Ultralytics Live Session Ep。 2个](https://youtu.be/LKpuzZllNpA)✨将直播**欧洲中部时间 12 月 13 日星期二 19:00**和[约瑟夫·纳尔逊](https://github.com/josephofiowa)的[机器人流](https://roboflow.com/?ref=ultralytics)谁将与我们一起讨论全新的 Roboflow x Ultralytics HUB 集成。收听 Glenn 和 Joseph 询问如何通过无缝数据集集成来加快工作流程！ 🔥
+[Ultralytics Live Session Ep。 2个](https://youtu.be/LKpuzZllNpA)✨将直播**欧洲中部时间 12 月 13 日星期二 19:00**和[约瑟夫·纳尔逊](https://github.com/josephofiowa)的[机器人流](https://roboflow.com/?ref=ultralytics)谁将与我们一起讨论全新的 Roboflow x Ultralytics HUB 集成。收听 Glenn 和 Joseph 询问如何通过无缝数据集集成加快工作流程！ 🔥
 
 <a align="center" href="https://youtu.be/LKpuzZllNpA" target="_blank">
 <img width="800" src="https://user-images.githubusercontent.com/85292283/205996456-bf3efa33-9c46-455e-b322-a64886cc7a0b.png"></a>
@@ -71,7 +71,7 @@ YOLOv5 🚀 是世界上最受欢迎的视觉 AI，代表<a href="https://ultral
 
 我们使用 A100 GPU 在 COCO 上以 640 图像大小训练了 300 个时期的 YOLOv5 分割模型。我们将所有模型导出到 ONNX FP32 以进行 CPU 速度测试，并导出到 TensorRT FP16 以进行 GPU 速度测试。我们在 Google 上进行了所有速度测试[协作临](https://colab.research.google.com/signup)便于重现的笔记本。
 
-| 模型                                                                                         | 尺寸<br><sup>（像素） | 地图<sup>盒子<br>50-95 | 地图<sup>面具<br>50-95 | 火车时间<br><sup>300个纪元<br>A100（小时） | 速度<br><sup>ONNX 中央处理器<br>（小姐） | 速度<br><sup>同仁堂A100<br>（小姐） | 参数<br><sup>(男) | 失败者<br><sup>@640（二） |
+| 模型                                                                                         | 尺寸<br><sup>（像素） | 地图<sup>盒子<br>50-95 | 地图<sup>面具<br>50-95 | 火车时间<br><sup>300个纪元<br>A100（小时） | 速度<br><sup>ONNX 中央处理器<br>（小姐） | 速度<br><sup>同仁堂A100<br>（小姐） | 参数<br><sup>(男) | 失败者<br><sup>@640（乙） |
 | ------------------------------------------------------------------------------------------ | --------------- | ------------------ | ------------------ | ------------------------------- | ----------------------------- | -------------------------- | -------------- | ------------------- |
 | [YOLOv5n-se](https://github.com/ultralytics/yolov5/releases/download/v7.0/yolov5n-seg.pt)  | 640             | 27.6               | 23.4               | 80:17                           | **62.7**                      | **1.2**                    | **2.0**        | **7.1**             |
 | [YOLOv5s-se](https://github.com/ultralytics/yolov5/releases/download/v7.0/yolov5s-seg.pt)  | 640             | 37.6               | 31.7               | 88:16                           | 173.3                         | 1.4                        | 7.6            | 26.4                |
@@ -263,9 +263,9 @@ python train.py --data coco.yaml --epochs 300 --weights '' --cfg yolov5n.yaml  -
     <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-deci.png" width="10%" /></a>
 </div>
 
-|                                     机器人流                                    |                                ClearML ⭐ 新                                |                                      彗星⭐新                                      |                                所以⭐新                               |
-| :-------------------------------------------------------------------------: | :-----------------------------------------------------------------------: | :----------------------------------------------------------------------------: | :---------------------------------------------------------------: |
-| 将您的自定义数据集标记并直接导出到 YOLOv5 以进行训练[机器人流](https://roboflow.com/?ref=ultralytics) | 使用自动跟踪、可视化甚至远程训练 YOLOv5[清除ML](https://cutt.ly/yolov5-readme-clearml)（开源！） | 永远免费，[彗星](https://bit.ly/yolov5-readme-comet)可让您保存 YOLOv5 模型、恢复训练以及交互式可视化和调试预测 | 一键自动编译量化YOLOv5以获得更好的推理性能[所以](https://bit.ly/yolov5-deci-platform) |
+|                                     机器人流                                    |                                ClearML ⭐ 新                                |                                       彗星⭐新                                      |                                所以⭐新                               |
+| :-------------------------------------------------------------------------: | :-----------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :---------------------------------------------------------------: |
+| 将您的自定义数据集标记并直接导出到 YOLOv5 以进行训练[机器人流](https://roboflow.com/?ref=ultralytics) | 使用自动跟踪、可视化甚至远程训练 YOLOv5[清除ML](https://cutt.ly/yolov5-readme-clearml)（开源！） | 永远免费，[彗星](https://bit.ly/yolov5-readme-comet)让您可以保存 YOLOv5 模型、恢复训练以及交互式可视化和调试预测 | 一键自动编译量化YOLOv5以获得更好的推理性能[所以](https://bit.ly/yolov5-deci-platform) |
 
 ## <div align="center">Ultralytics 集线器</div>
 
@@ -296,7 +296,7 @@ YOLOv5 被设计为超级容易上手和简单易学。我们优先考虑现实�
 
 ### 预训练检查点
 
-| 模型                                                                                                  | 尺寸<br><sup>（像素） | 地图<sup>值<br>50-95 | 地图<sup>值<br>50   | 速度<br><sup>处理器b1<br>（小姐） | 速度<br><sup>V100 b1<br>（小姐） | 速度<br><sup>V100 b32<br>（小姐） | 参数<br><sup>(男) | 失败者<br><sup>@640（二） |
+| 模型                                                                                                  | 尺寸<br><sup>（像素） | 地图<sup>值<br>50-95 | 地图<sup>值<br>50   | 速度<br><sup>处理器b1<br>（小姐） | 速度<br><sup>V100 b1<br>（小姐） | 速度<br><sup>V100 b32<br>（小姐） | 参数<br><sup>(男) | 失败者<br><sup>@640（乙） |
 | --------------------------------------------------------------------------------------------------- | --------------- | ----------------- | ---------------- | ------------------------ | -------------------------- | --------------------------- | -------------- | ------------------- |
 | [YOLOv5n](https://github.com/ultralytics/yolov5/releases/download/v6.2/yolov5n.pt)                  | 640             | 28.0              | 45.7             | **45**                   | **6.3**                    | **0.6**                     | **1.9**        | **4.5**             |
 | [YOLOv5s](https://github.com/ultralytics/yolov5/releases/download/v6.2/yolov5s.pt)                  | 640             | 37.4              | 56.8             | 98                       | 6.4                        | 0.9                         | 7.2            | 16.5                |
@@ -331,7 +331,7 @@ YOLOv5[发布 v6.2](https://github.com/ultralytics/yolov5/releases)带来对分�
 
 我们使用 4xA100 实例在 ImageNet 上训练了 90 个时期的 YOLOv5-cls 分类模型，我们训练了 ResNet 和 EfficientNet 模型以及相同的默认训练设置以进行比较。我们将所有模型导出到 ONNX FP32 以进行 CPU 速度测试，并导出到 TensorRT FP16 以进行 GPU 速度测试。我们在 Google 上进行了所有速度测试[协作临](https://colab.research.google.com/signup)为了便于重现。
 
-| 模型                                                                                          | 尺寸<br><sup>（像素） | acc<br><sup>top1 | acc<br><sup>烹饪 | 训练<br><sup>90个纪元<br>4xA100（小时） | 速度<br><sup>ONNX 中央处理器<br>（小姐） | 速度<br><sup>TensorRT V100<br>（小姐） | 参数<br><sup>(男) | 失败者<br><sup>@224（乙） |
+| 模型                                                                                          | 尺寸<br><sup>（像素） | acc<br><sup>top1 | acc<br><sup>烹饪 | 训练<br><sup>90个纪元<br>4xA100（小时） | 速度<br><sup>ONNX 中央处理器<br>（小姐） | 速度<br><sup>TensorRT V100<br>（小姐） | 参数<br><sup>(男) | 失败者<br><sup>@224（二） |
 | ------------------------------------------------------------------------------------------- | --------------- | ---------------- | -------------- | ------------------------------ | ----------------------------- | -------------------------------- | -------------- | ------------------- |
 | [YOLOv5n-cls](https://github.com/ultralytics/yolov5/releases/download/v6.2/yolov5n-cls.pt)  | 224             | 64.6             | 85.4           | 7:59                           | **3.3**                       | **0.5**                          | **2.5**        | **0.5**             |
 | [YOLOv5s-cls](https://github.com/ultralytics/yolov5/releases/download/v6.2/yolov5s-cls.pt)  | 224             | 71.5             | 90.2           | 8:09                           | 6.6                           | 0.6                              | 5.4            | 1.4                 |
